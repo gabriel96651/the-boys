@@ -12,33 +12,137 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     background-color: red;
     background-image: url(assets/baners/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 48px;
 }
 
 .logo-amz {
-    width: 140px;
+    width: 130px;
 }
 
-.navegation ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+.navegation ul {
+display: flex;
+justify-content: space-between;
+gap: 40px;
 }
 
-.navegation ul li a{
-    color: #fff;
+.navegation ul li a {
     font-size: 18px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid transparent;
-    transition: all .6s;
+color: #fff;
+padding-bottom: 5px;
+border-bottom: 2px solid transparent;
+transition: all .6s;
 }
 
 .navegation ul li a:hover {
-    border-bottom:  2px solid #138ecc;
+    border-bottom: 2px solid #138ecc
 }
+
+.navegation .search{
+width: 20px;
+cursor: pointer;
+filter: invert(1);
+
+}
+
+.navegation .logo-cnl {
+    width: 25px;
+    cursor: pointer;
+}
+
+.logoBoys {
+    width: 550px;
+    margin: 45px 30px;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50em;
+    margin-top: 1.5em;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2.5em;
+}
+
+.btn-box {
+    margin-left: 38px;
+}
+
+.btn-box a {
+    background-color: #0d6692;
+    padding: 18px 38px;
+    margin: 10px;
+    color: #fff;
+    border-radius: 5px ;
+    border-bottom: 3px solid #fff;
+    transition: all .8s;
+}
+
+.btn-box a:hover{
+    background-color: #fff;
+    color: #000;
+    border-bottom: 3px solid #0d6692;
+}
+
+.btn-box a:focus {
+    background-color: #fff;
+    color: #000;
+    border-bottom: 3px solid #0d6692;
+}
+
+.description {
+    margin: 48px;
+    color: #fff;
+}
+
+.btn-box2{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    padding: 15px 45px;
+    margin-left: 38px;
+    border-radius: 5px 5px 0 0;
+    font-size: 25px;
+    color: #fff;
+    border-bottom: 4px solid #fff;
+    background: #0f79af;
+    transition: all .3s;
+}
+.btn-box2:hover{
+    background: #138ecc;
+}
+
+.btn-box2:focus {
+    background-color: #fff;
+    color: #000;
+    border-bottom: 3px solid #0d6692;
+}
+
+.btn-box2 .play{
+    width: 1.3em;
+    filter: invert(1);
+}
+
+
+
+
+
+
+
+
+
